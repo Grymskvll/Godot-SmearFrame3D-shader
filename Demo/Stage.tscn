@@ -1,0 +1,296 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Drag3D.gd" type="Script" id=1]
+[ext_resource path="res://ball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SmearFrame3D/SmearFrame3D.shader" type="Shader" id=3]
+[ext_resource path="res://simple-free-look-camera/camera.gd" type="Script" id=4]
+
+[sub_resource type="QuadMesh" id=1]
+size = Vector2( 50, 50 )
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=4]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=6]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=7]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=8]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=9]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=10]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=11]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/smear_enabled = true
+shader_param/smear_amount = 2.0
+shader_param/front_smear_factor = 0.3
+shader_param/rear_smear_factor = 1.0
+shader_param/front_normal_bias = 0.25
+shader_param/rear_normal_bias = 0.25
+shader_param/noise_factor = 0.3
+shader_param/noise_max = 1.0
+shader_param/noise_min = -0.5
+shader_param/_transl = Vector3( 0, 0, 0 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="floor" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, -4.93874, 0 )
+visible = false
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="FreelookCamera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 11.7772, 0 )
+script = ExtResource( 4 )
+
+[node name="Drag3D" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="my balls" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.06916, 0, -5.06625 )
+
+[node name="Smear disabled" parent="my balls" instance=ExtResource( 2 )]
+
+[node name="MeshInstance" parent="my balls/Smear disabled" index="0"]
+material/0 = SubResource( 2 )
+
+[node name="SmearFrame3D" parent="my balls/Smear disabled/MeshInstance" index="0"]
+enabled = false
+
+[node name="Smear default" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="MeshInstance" parent="my balls/Smear default" index="0"]
+material/0 = SubResource( 3 )
+
+[node name="Smear full-bias no-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="MeshInstance" parent="my balls/Smear full-bias no-noise" index="0"]
+material/0 = SubResource( 4 )
+
+[node name="SmearFrame3D" parent="my balls/Smear full-bias no-noise/MeshInstance" index="0"]
+smear_amount = 3.0
+front_normal_bias = 1.0
+rear_normal_bias = 1.0
+noise_factor = 0.0
+smear_speed_min = 0.0
+smear_speed_ease = 2.0
+
+[node name="Smear low-bias no-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="MeshInstance" parent="my balls/Smear low-bias no-noise" index="0"]
+material/0 = SubResource( 5 )
+
+[node name="SmearFrame3D" parent="my balls/Smear low-bias no-noise/MeshInstance" index="0"]
+noise_factor = 0.0
+
+[node name="Smear no-bias lowres-high-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="MeshInstance" parent="my balls/Smear no-bias lowres-high-noise" index="0"]
+material/0 = SubResource( 6 )
+
+[node name="SmearFrame3D" parent="my balls/Smear no-bias lowres-high-noise/MeshInstance" index="0"]
+smear_amount = 4.0
+front_smear_factor = 0.4
+front_normal_bias = 0.0
+rear_normal_bias = 0.0
+noise_factor = 0.7
+noise_tex_width = 64
+noise_tex_height = 64
+
+[node name="Smear no-bias no-noise no-front" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+
+[node name="MeshInstance" parent="my balls/Smear no-bias no-noise no-front" index="0"]
+material/0 = SubResource( 7 )
+
+[node name="SmearFrame3D" parent="my balls/Smear no-bias no-noise no-front/MeshInstance" index="0"]
+smear_amount = 2.0
+front_smear_factor = 0.0
+front_normal_bias = 0.0
+rear_normal_bias = 0.0
+noise_factor = 0.0
+smear_speed_min = 0.0
+smear_speed_ease = 2.0
+
+[node name="Smear no-noise full-front" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+
+[node name="MeshInstance" parent="my balls/Smear no-noise full-front" index="0"]
+material/0 = SubResource( 8 )
+
+[node name="SmearFrame3D" parent="my balls/Smear no-noise full-front/MeshInstance" index="0"]
+smear_amount = 2.5
+front_smear_factor = 1.0
+noise_factor = 0.0
+smear_speed_min = 0.0
+smear_speed_ease = 2.0
+
+[node name="Smear mediumres-medium-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2 )
+
+[node name="MeshInstance" parent="my balls/Smear mediumres-medium-noise" index="0"]
+material/0 = SubResource( 9 )
+
+[node name="SmearFrame3D" parent="my balls/Smear mediumres-medium-noise/MeshInstance" index="0"]
+smear_amount = 6.0
+noise_factor = 0.6
+noise_tex_width = 128
+noise_tex_height = 128
+
+[node name="Smear highres-high-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2 )
+
+[node name="MeshInstance" parent="my balls/Smear highres-high-noise" index="0"]
+material/0 = SubResource( 10 )
+
+[node name="SmearFrame3D" parent="my balls/Smear highres-high-noise/MeshInstance" index="0"]
+smear_amount = 8.0
+noise_factor = 0.8
+smear_speed_min = 0.0
+
+[node name="Smear deep-noise" parent="my balls" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+
+[node name="MeshInstance" parent="my balls/Smear deep-noise" index="0"]
+material/0 = SubResource( 11 )
+
+[node name="SmearFrame3D" parent="my balls/Smear deep-noise/MeshInstance" index="0"]
+smear_amount = 2.0
+front_smear_factor = 0.5
+noise_factor = 1.0
+noise_max = 6.0
+noise_min = -6.0
+noise_tex_width = 64
+noise_tex_height = 64
+
+[editable path="my balls/Smear disabled"]
+[editable path="my balls/Smear default"]
+[editable path="my balls/Smear full-bias no-noise"]
+[editable path="my balls/Smear low-bias no-noise"]
+[editable path="my balls/Smear no-bias lowres-high-noise"]
+[editable path="my balls/Smear no-bias no-noise no-front"]
+[editable path="my balls/Smear no-noise full-front"]
+[editable path="my balls/Smear mediumres-medium-noise"]
+[editable path="my balls/Smear highres-high-noise"]
+[editable path="my balls/Smear deep-noise"]
