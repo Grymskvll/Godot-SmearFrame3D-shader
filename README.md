@@ -1,3 +1,6 @@
+
+https://user-images.githubusercontent.com/17933607/111867037-c25b3880-8971-11eb-959a-700da9de2dbd.mp4
+
 # Disclaimer
 At the time of writing, Godot does not have a reasonable way to add shader effects to meshes/materials. The process of adding this smear effect to an existing material is tedious and likely destructive. Use in production at your own peril.
 
